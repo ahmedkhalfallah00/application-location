@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Location{% endblock %}
+
+{% block body %}
+    <h1>Local</h1>
+
+    {{ include('location/_form.html.twig') }}
+
+    <a href="{{ path('location_index') }}"class="btn btn-success">back to list</a>
+{% endblock %}
